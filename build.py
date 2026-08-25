@@ -1,4 +1,5 @@
 import html
+import re
 ME = "Jeong Hun Yeo"
 
 pubs = [
@@ -125,6 +126,22 @@ def entry(p):
         </div>
       </div>"""
 
+def year_of(v):
+    m = re.search(r"\b(20\d{2})\b", v)
+    return m.group(1) if m else ""
+
+def render(items, year_marks=False):
+    out, cur = [], None
+    for p in items:
+        if year_marks:
+            y = year_of(p["v"])
+            if y != cur:
+                cur = y
+                out.append(f'\n  <p class="year">{y}</p>')
+        out.append(entry(p))
+    return "".join(out)
+
+
 page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,6 +203,10 @@ page = f"""<!DOCTYPE html>
   .venue {{ font-size: 14px; color: var(--muted); margin-top: 3px !important; }}
   .desc {{ font-size: 14px; color: var(--muted); margin-top: 6px !important; }}
 
+  .year {{ font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: var(--muted);
+           font-variant-numeric: tabular-nums; margin: 26px 0 -6px; }}
+  .note + .year {{ margin-top: 4px; }}
+
   .list {{ margin: 0; padding-left: 0; list-style: none; }}
   .list li {{ display: flex; justify-content: space-between; gap: 16px; padding: 4px 0; }}
   .list .when {{ color: var(--muted); font-size: 14px; white-space: nowrap; }}
@@ -232,10 +253,10 @@ page = f"""<!DOCTYPE html>
 
   <h2>Publications</h2>
   <p class="note">* equal contribution. Also on <a href="https://scholar.google.com/citations?user=PJoYv2cAAAAJ">Google Scholar</a>.</p>
-  {"".join(entry(p) for p in pubs)}
+  {render(pubs, year_marks=True)}
 
   <h2>Preprints</h2>
-  {"".join(entry(p) for p in preprints)}
+  {render(preprints)}
 
   <h2>Awards</h2>
   <ul class="list">

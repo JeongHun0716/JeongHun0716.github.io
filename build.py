@@ -2,6 +2,8 @@ import html
 import re
 ME = "Jeong Hun Yeo"
 
+# NOTE: the d="..." one-line summaries are no longer rendered.
+#       They are kept here in case the descriptions are wanted back later.
 pubs = [
  dict(t="Diffusion Large Language Models for Visual Speech Recognition",
       a=[("Jeong Hun Yeo",""),("Chae Won Kim",""),("Hyeongseop Rha",""),("Yong Man Ro","")],
@@ -122,7 +124,6 @@ def entry(p):
           <p class="title">{html.escape(p['t'])}</p>
           <p class="authors">{authors(p['a'])}</p>
           <p class="venue">{p['v']} &nbsp;·&nbsp; {links}</p>
-          <p class="desc">{html.escape(p['d'])}</p>
         </div>
       </div>"""
 
@@ -194,7 +195,7 @@ page = f"""<!DOCTYPE html>
   .news dt {{ color: var(--muted); font-size: 14px; padding-top: 2px; }}
   .news dd {{ margin: 0; }}
 
-  .pub {{ display: grid; grid-template-columns: 210px 1fr; gap: 26px; padding: 22px 0; align-items: center; }}
+  .pub {{ display: grid; grid-template-columns: 210px 1fr; gap: 26px; padding: 18px 0; align-items: center; }}
   .thumb {{ width: 210px; height: 129px; border: 1px solid var(--line); border-radius: 8px;
             overflow: hidden; background: var(--bg);
             transition: box-shadow .18s ease, transform .18s ease; }}
@@ -206,7 +207,6 @@ page = f"""<!DOCTYPE html>
   .authors {{ font-size: 15px; margin-top: 3px !important; }}
   .venue {{ font-family: {SANS}; font-size: 13px; letter-spacing: .01em;
             color: var(--muted); margin-top: 4px !important; }}
-  .desc {{ font-size: 14px; color: var(--muted); margin-top: 6px !important; }}
 
   .year {{ font-family: {SANS}; font-size: 12px; font-weight: 600; letter-spacing: 0.14em;
            color: #9a9a96; font-variant-numeric: tabular-nums; margin: 30px 0 2px; }}

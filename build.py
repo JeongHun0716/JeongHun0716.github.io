@@ -239,7 +239,7 @@ page = f"""<!DOCTYPE html>
       <h1>Jeong Hun Yeo</h1>
       <p class="role">Postdoctoral Researcher · School of Electrical Engineering, KAIST</p>
       <p>I am a postdoctoral researcher in the <a href="https://www.ivllab.kaist.ac.kr/">Integrated Vision &amp; Language Lab</a> at KAIST, supported by the Jang Young Sil Fellowship. I received my Ph.D. in Electrical Engineering from KAIST in 2026, advised by <a href="https://www.ivllab.kaist.ac.kr/people/professor">Prof. Yong Man Ro</a>.</p>
-      <p>My research focuses on visual and audio-visual speech recognition with large language models — disambiguating what lips alone cannot tell, scaling to languages with little or no labeled data, and making inference fast enough for real-time use. Recently I am working on diffusion language models for low-latency speech interaction and multimodal agents for long-video understanding.</p>
+      <p>My research builds AI that can understand human communication as it unfolds in the real world — across modalities and languages, in real time, and over the course of a conversation. I develop visual and audio-visual speech recognition that extends to languages never seen in training, diffusion language models for low-latency decoding, and agentic systems that remember and reason over conversational context, motivated as much by accessibility as by accuracy.</p>
       <p class="links">
         <a href="mailto:jh.y@ieee.org">Email</a><span>/</span>
         <a href="cv.pdf">CV</a><span>/</span>

@@ -102,9 +102,9 @@ preprints = [
 
 news = [
  ("Aug 2026","Two papers accepted to <b>EMNLP 2026</b>."),
- ("Mar 2026","Started as a postdoctoral researcher at KAIST, supported by the <b>Jang Young Sil Fellowship</b>."),
+ ("Mar 2026","Started as a postdoctoral researcher at KAIST, supported by the <b>Jang Young Sil Postdoctoral Fellowship</b>."),
  ("Feb 2026","Received my Ph.D. in Electrical Engineering from KAIST."),
- ("Jan 2026","GCAgent accepted to <b>IEEE TMM</b>; ERV accepted to <b>AAAI 2026</b>."),
+ ("Jan 2026","GCAgent accepted to <b>IEEE TMM</b>; a paper on multimodal emotion reasoning accepted to <b>AAAI 2026</b>."),
  ("Jun 2025","Zero-AVSR accepted to <b>ICCV 2025</b>. Gave an invited talk at ETRI."),
 ]
 
@@ -240,7 +240,7 @@ page = f"""<!DOCTYPE html>
       <h1>Jeong Hun Yeo</h1>
       <p class="role">Postdoctoral Researcher · School of Electrical Engineering, KAIST</p>
       <p class="tagline">Multimodal AI for Human Communication</p>
-      <p>I am a postdoctoral researcher in the <a href="https://www.ivllab.kaist.ac.kr/">Integrated Vision &amp; Language Lab</a> at KAIST, supported by the Jang Young Sil Fellowship. I received my Ph.D. in Electrical Engineering from KAIST in 2026, advised by <a href="https://www.ivllab.kaist.ac.kr/people/professor">Prof. Yong Man Ro</a>.</p>
+      <p>I am a postdoctoral researcher in the <a href="https://www.ivllab.kaist.ac.kr/">Integrated Vision &amp; Language Lab</a> at KAIST, supported by the Jang Young Sil Postdoctoral Fellowship. I received my Ph.D. in Electrical Engineering from KAIST in 2026, advised by <a href="https://www.ivllab.kaist.ac.kr/people/professor">Prof. Yong Man Ro</a>.</p>
       <p>My research builds multimodal AI for human communication — across languages, in real time, and over the course of a conversation. I work on visual and audio-visual speech recognition, diffusion language models for efficient decoding, and agents with memory and reasoning.</p>
       <p class="links">
         <a href="mailto:jh.y@ieee.org">Email</a><span>/</span>

@@ -243,7 +243,7 @@ page = f"""<!DOCTYPE html>
       <p>I am a postdoctoral researcher in the <a href="https://www.ivllab.kaist.ac.kr/">Integrated Vision &amp; Language Lab</a> at KAIST, supported by the Jang Young Sil Postdoctoral Fellowship. I received my Ph.D. in Electrical Engineering from KAIST in 2026, advised by <a href="https://www.ivllab.kaist.ac.kr/people/professor">Prof. Yong Man Ro</a>.</p>
       <p>My research builds multimodal AI for human communication — across languages, in real time, and over the course of a conversation. I work on visual and audio-visual speech recognition, diffusion language models for efficient decoding, and agents with memory and reasoning.</p>
       <p class="links">
-        <a href="mailto:jh.y@ieee.org">Email</a><span>/</span>
+        <a href="mailto:jh.y@ieee.org">jh.y@ieee.org</a><span>/</span>
         <a href="cv.pdf">CV</a><span>/</span>
         <a href="https://scholar.google.com/citations?user=PJoYv2cAAAAJ">Google Scholar</a><span>/</span>
         <a href="https://github.com/JeongHun0716">GitHub</a><span>/</span>

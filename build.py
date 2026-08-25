@@ -179,7 +179,8 @@ page = f"""<!DOCTYPE html>
   header .photo {{ flex: 0 0 180px; }}
   header .photo img {{ width: 180px; height: 180px; border-radius: 50%; object-fit: cover; background: var(--thumb-bg); display: block; }}
   h1 {{ font-size: 34px; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 4px; }}
-  .role {{ color: var(--muted); margin: 0 0 18px; font-size: 15px; }}
+  .role {{ color: var(--muted); margin: 0 0 10px; font-size: 15px; }}
+  .tagline {{ color: var(--accent); font-size: 16px; font-weight: 600; margin: 0 0 18px; }}
   header p {{ margin: 0 0 12px; }}
   .links {{ font-size: 15px; margin-top: 4px; }}
   .links a {{ margin-right: 4px; }}
@@ -238,8 +239,9 @@ page = f"""<!DOCTYPE html>
     <div class="text">
       <h1>Jeong Hun Yeo</h1>
       <p class="role">Postdoctoral Researcher · School of Electrical Engineering, KAIST</p>
+      <p class="tagline">Multimodal AI for Human Communication</p>
       <p>I am a postdoctoral researcher in the <a href="https://www.ivllab.kaist.ac.kr/">Integrated Vision &amp; Language Lab</a> at KAIST, supported by the Jang Young Sil Fellowship. I received my Ph.D. in Electrical Engineering from KAIST in 2026, advised by <a href="https://www.ivllab.kaist.ac.kr/people/professor">Prof. Yong Man Ro</a>.</p>
-      <p>My research builds AI that can understand human communication as it unfolds in the real world — across modalities and languages, in real time, and over the course of a conversation. I develop visual and audio-visual speech recognition that extends to languages never seen in training, diffusion language models for low-latency decoding, and agentic systems that remember and reason over conversational context, motivated as much by accessibility as by accuracy.</p>
+      <p>My research builds multimodal AI for human communication — across languages, in real time, and over the course of a conversation. I work on visual and audio-visual speech recognition, diffusion language models for efficient decoding, and agents with memory and reasoning.</p>
       <p class="links">
         <a href="mailto:jh.y@ieee.org">Email</a><span>/</span>
         <a href="cv.pdf">CV</a><span>/</span>
